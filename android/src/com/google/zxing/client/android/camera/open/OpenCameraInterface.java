@@ -43,7 +43,7 @@ public final class OpenCameraInterface {
     while (index < numCameras) {
       Camera.CameraInfo cameraInfo = new Camera.CameraInfo();
       Camera.getCameraInfo(index, cameraInfo);
-      if (cameraInfo.facing == Camera.CameraInfo.CAMERA_FACING_BACK) {
+      if (cameraInfo.facing == Camera.CameraInfo.CAMERA_FACING_FRONT) {
         break;
       }
       index++;
